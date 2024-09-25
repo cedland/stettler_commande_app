@@ -75,6 +75,7 @@ class ProductsController extends GetxController {
         isLoading.value = false;
         final contents = json.decode(response.body)['data'];
         categoryListApi = contents;
+        print(contents);
       }else{
         isLoading.value = false;
         print(json.decode(response.body));
